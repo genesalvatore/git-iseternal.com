@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import CathedralStructuredData from '@/components/CathedralStructuredData'
 
 export const metadata: Metadata = {
   title: 'Git is Eternal | Mathematical Immortality Through Distributed Systems',
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
     canonical: 'https://git-iseternal.com',
   },
   metadataBase: new URL('https://git-iseternal.com'),
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 } },
 }
 
 export default function RootLayout({
@@ -39,6 +41,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo-git-is-life.png" type="image/png" />
         <script defer data-domain="git-iseternal.com" src="https://plausible.io/js/script.js"></script>
+        <CathedralStructuredData siteName="Git is Eternal" siteUrl="https://git-iseternal.com" description="Git is Eternal. Commits never die. History never fades. Your legacy lives in the merkle tree forever." theme="eternity" />
       </head>
       <body>{children}</body>
     </html>
