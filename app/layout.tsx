@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import CathedralStructuredData from '@/components/CathedralStructuredData'
+import MatomoAnalytics from '@/components/MatomoAnalytics'
 
 export const metadata: Metadata = {
   title: 'Git is Eternal | Mathematical Immortality Through Distributed Systems',
@@ -43,7 +44,10 @@ export default function RootLayout({
         <script defer data-domain="git-iseternal.com" src="https://plausible.io/js/script.js"></script>
         <CathedralStructuredData siteName="Git is Eternal" siteUrl="https://git-iseternal.com" description="Git is Eternal. Commits never die. History never fades. Your legacy lives in the merkle tree forever." theme="eternity" />
       </head>
-      <body>{children}</body>
+      <body>
+        <MatomoAnalytics siteId="5" />
+        {children}
+      </body>
     </html>
   )
 }
