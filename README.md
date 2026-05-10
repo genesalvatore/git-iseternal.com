@@ -77,7 +77,7 @@ Git achieves eternal existence through:
 
 1. **Immutability** - Data cannot change
 2. **Replication** - Exists everywhere simultaneously
-3. **Cryptographic Proof** - Verifiable forever
+3. **Hash Proof** - Verifiable forever
 4. **Network Effect** - Immortal through distribution
 
 Once committed, it exists eternally.
